@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringMVC-01-Servlet" />
         <module name="SpringMVC-02-Start" />
+        <module name="SpringMVC-03-Annotation" />
       </profile>
     </annotationProcessing>
   </component>
