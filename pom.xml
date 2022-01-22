@@ -13,6 +13,7 @@
         <module>SpringMVC-02-Start</module>
         <module>SpringMVC-03-Annotation</module>
         <module>SpringMVC-04-Json</module>
+        <module>SpringMVC=04=json</module>
     </modules>
 
 

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--1，处理器映射器-->
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+    <!--2，处理器适配器-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
-
-    <!--视图解析器:DispatcherServlet给他的ModelAndView-->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="InternalResourceViewResolver">
-        <!--前缀 代表跳转的默认前缀（转发，重定向的默认前缀）现在就只要写文件名-->
-        <property name="prefix" value="/WEB-INF/jsp/"/>
-        <!--后缀-->
+    <!--3，视图解析器:DispatcherServlet给他的ModelAndView-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+        <!--前缀 代表跳转的默认前缀（转发，重定向的默认前缀）现在就只要写文件名-->
+        <!--后缀-->
 
 <!--    请求/mycon  就会请求我的controller类-->
     <bean id="/mycon" class="com.apple.controller.MyController"/>
-
 </beans>
