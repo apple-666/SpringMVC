@@ -1,12 +1,10 @@
 package com.apple.controller;
 
 import com.apple.pojo.Book;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Author Double_apple
@@ -42,7 +40,7 @@ public class MyController {
 //        配置视图解析器的写法 默认为转发
 //        return "res";
 //        return "redirect:/index.jsp";
-        return "url";
+        return "res";
     }
 
     //处理请求地址中的参数
@@ -53,5 +51,12 @@ public class MyController {
 //        return "res";
 //        return "redirect:/index.jsp";
         return "url";
+    }
+
+    //处理请求地址中的参数
+    @GetMapping("/apple/a1")
+    public String applea1(String name,Model model) {
+        model.addAttribute("msg",name);
+        return "res";
     }
 }

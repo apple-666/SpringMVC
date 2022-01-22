@@ -11,6 +11,10 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$11
+
+  <form action="/apple/a1" method="get">
+    <input type="text" name="name"/>
+    <input type="submit"/>
+  </form>
   </body>
 </html>

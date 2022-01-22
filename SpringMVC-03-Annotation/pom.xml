@@ -12,6 +12,7 @@
     <groupId>com.apple</groupId>
     <artifactId>SpringMVCAnnotation</artifactId>
 
+<!--    搜索 配置文件信息-->
     <build>
         <resources>
             <resource>

@@ -7,9 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringMVC-01-Servlet" />
+        <module name="SpringMVC-04-Json" />
         <module name="SpringMVC-02-Start" />
         <module name="SpringMVC-03-Annotation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SpringMVC-04-SpringMvcJson" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
