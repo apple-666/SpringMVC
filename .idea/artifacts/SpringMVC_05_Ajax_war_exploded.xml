@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="SpringMVCjson:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/SpringMVCjson_war_exploded</output-path>
+  <artifact type="exploded-war" name="SpringMVC-05-Ajax:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpringMVC_05_Ajax_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="SpringMVCjson/web/Web" />
+      <element id="javaee-facet-resources" facet="SpringMVC-05-Ajax/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="SpringMVCjson" />
+          <element id="module-output" name="SpringMVC-05-Ajax" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />

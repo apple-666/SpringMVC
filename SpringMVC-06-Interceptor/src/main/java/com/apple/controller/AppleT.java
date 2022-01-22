@@ -1,17 +1,18 @@
 package com.apple.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author Double_apple
- * @Date 2022/1/22 14:21
+ * @Date 2022/1/22 16:25
  * @Version 1.0
  */
-@Controller
-public class AppleTest {
+@RestController
+public class AppleT {
+
     @RequestMapping("/apple")
     public String come(){
-        return "apple";
+        return "Apple come to";
     }
 }

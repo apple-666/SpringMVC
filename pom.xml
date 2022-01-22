@@ -12,8 +12,9 @@
         <module>SpringMVC-01-Servlet</module>
         <module>SpringMVC-02-Start</module>
         <module>SpringMVC-03-Annotation</module>
-        <module>SpringMVC-04-Json</module>
-        <module>SpringMVC=04=json</module>
+        <module>SpringMVC-04-JSON</module>
+        <module>SpringMVC-05-Ajax</module>
+        <module>SpringMVC-06-Interceptor</module>
     </modules>
 
 

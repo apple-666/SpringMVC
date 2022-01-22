@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.apple</groupId>
-    <artifactId>SpringMVCJson</artifactId>
+    <artifactId>SpringMVCJSON</artifactId>
 
     <!--    搜索 配置文件信息-->
     <build>
