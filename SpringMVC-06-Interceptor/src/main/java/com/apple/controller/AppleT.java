@@ -13,6 +13,7 @@ public class AppleT {
 
     @RequestMapping("/apple")
     public String come(){
+        System.out.println("come方法执行中");
         return "Apple come to";
     }
 }

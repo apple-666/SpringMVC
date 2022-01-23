@@ -19,4 +19,12 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <mvc:interceptors>
+        <mvc:interceptor>
+<!--            作用在哪些路径下-->
+            <mvc:mapping path="/apple/**"/>
+            <bean class="com.apple.config.AppleLoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>

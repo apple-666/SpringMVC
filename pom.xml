@@ -15,6 +15,7 @@
         <module>SpringMVC-04-JSON</module>
         <module>SpringMVC-05-Ajax</module>
         <module>SpringMVC-06-Interceptor</module>
+        <module>SpringMVC-07-Project</module>
     </modules>
 
 
@@ -42,6 +43,26 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
 
 
 

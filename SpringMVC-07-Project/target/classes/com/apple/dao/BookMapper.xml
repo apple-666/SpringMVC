@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.apple.dao.BookMapper">
+    <insert id="addBook">
+        insert into springmvc.books
+        values (#{bookID}, #{bookName}, #{bookCounts}, #{detail});
+    </insert>
+
+    <delete id="deleteBook">
+        delete
+        from springmvc.books
+        where bookID = #{book.id}
+    </delete>
+
+    <update id="updateBook">
+        update springmvc.books
+        set bookCounts=#{bookCounts},
+            bookName=#{bookName},
+            detail=#{detail}
+            where bookID = #{bookID}
+    </update>
+
+    <!--	??-->
+    <select id="queryBook" resultType="com.apple.pojo.Book">
+        select *
+        from springmvc.books
+        where bookID = #{id}
+    </select>
+
+    <!--	??-->
+    <select id="queryAllBook" resultType="com.apple.pojo.Book">
+        select *
+        from springmvc.books
+    </select>
+</mapper>
